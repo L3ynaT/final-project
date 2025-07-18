@@ -9,10 +9,15 @@
   import IntersectionObserverSectionCard from "./sections/IntersectionObserverSectionCard.svelte";
   import IntersectionObserverListExample from "./sections/IntersectionObserverListExample.svelte";
   import TestSection from "./sections/TestSection.svelte";
+  import StandAlone from "./sections/StandAlone.svelte";
+  import CountyTitleSection from "./sections/CountyTitleSection.svelte";
 </script>
 
 <main>
   <TitleSection />
+  <StandAlone />
+  <CountyTitleSection />
+
   <RightAlignedExample />
   <LeftAlignedExample />
   <ImageExample />

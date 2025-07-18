@@ -2,19 +2,17 @@
   let { children } = $props();
 </script>
 
-<div class="article-text">
+<div class="footnote-text">
   <p>
     {@render children()}
   </p>
 </div>
 
 <style>
-  .article-text {
-    margin: 40px auto;
-    font-size: 1.5rem;
+  .footnote-text {
+    font-size: 0.8rem;
     font-family: "DM Sans";
     width: 50%;
-    background-color: #E6E6E6;
     color: #000000;
     padding: 30px;
   }

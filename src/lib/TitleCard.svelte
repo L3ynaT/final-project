@@ -22,7 +22,6 @@
         align-items: center;
         text-align: left;
         box-sizing: border-box;
-        font-family: "Inter", sans-serif;
     }
 
     .content {

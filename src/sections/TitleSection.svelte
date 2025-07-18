@@ -23,12 +23,13 @@
 
     {#snippet scrolly()}
       <Gradient direction="up"></Gradient>
-      <FullPage
-        >In 2022, the median annual earnings for Black full-time workers (25-34
+      <FullPage>
+        <ArticleText>In 2022, the median annual earnings for Black full-time workers (25-34
         years old of all education levels) was $46,040, one of the lowest
-        earnings compared to other racial/ethnic groups.
+        earnings compared to other racial/ethnic groups.</ArticleText>
+        <ArticleText>[a graph will go here]</ArticleText>
       </FullPage>
-      <Gradient direction="down"></Gradient>
+    
     {/snippet}
   </ScrollerStack>
 </div>

@@ -21,12 +21,4 @@
     background-color: #94CBEC;
   }
 
-  p {
-    margin: 50vh auto;
-    width: 50%;
-    height: 300px;
-    background-color: #E6E6E6;
-    color: #000000;
-    padding: 20px;
-  }
 </style>
