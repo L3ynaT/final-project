@@ -10,17 +10,17 @@
     // 85% and 95% ensures we trigger the correct change in background color
     // whether the element is being scrolled into the viewport or out of the viewport.
     const options = {
-        threshold: [0.85, 0.95],
+        threshold: [0.45, 0.55],
     };
 
     const callback = (entries, observer) => {
         entries.forEach((entry) => {
             const elem = entry.target;
 
-            if (entry.intersectionRatio >= 0.9) {
+            if (entry.intersectionRatio >= 0.5) {
                 // "active" state
                 elem.style.backgroundColor = "#e3ff00";
-            } else if (entry.intersectionRatio < 0.9) {
+            } else if (entry.intersectionRatio < 0.5) {
                 // "inactive" state
                 elem.style.backgroundColor = "#888888";
             }
