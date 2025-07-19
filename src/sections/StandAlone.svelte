@@ -37,12 +37,9 @@
   }
   section {
     display: flex;
-    height: 100vh;
+    height: 110vh;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  }
-  article {
-    
   }
 </style>

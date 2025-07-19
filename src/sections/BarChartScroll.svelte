@@ -9,10 +9,10 @@
     chart: {
       type: "bar",
       height: 2000,
-      backgroundColor: '#E6E6E6',
+      backgroundColor: "#E6E6E6",
       style: {
-            fontFamily: 'DM Sans',
-        }
+        fontFamily: "DM Sans",
+      },
     },
     title: {
       text: "Median Income by County",
@@ -96,8 +96,7 @@
           34371, 29434, 31495, 36207, 38402, 32976, 45951, 50741, 36259, 35160,
           33188, 38814, 35741, 40265, 49966, 40117, 32131, 33182, 37981, 36723,
         ],
-        color: '#0072B2',
-        
+        color: "#0072B2",
       },
       {
         name: "Black Median Income",
@@ -105,7 +104,7 @@
           33155, 26469, 26201, 29556, 36078, 26812, 40838, 49454, 29779, 26819,
           27799, 29258, 30304, 31902, 43863, 30353, 26250, 27849, 31346, 30149,
         ],
-        color: '#5DA899',
+        color: "#5DA899",
       },
     ],
   };
@@ -114,31 +113,35 @@
 <div>
   <Scroller layout="left">
     {#snippet sticky()}
-      <ArticleText>
-        All 20 counties fell into the lower quartile of county median incomes.
-      </ArticleText>
+      <div>
+        <ArticleText>
+          All 20 counties fell into the lower quartile of county median incomes.
+        </ArticleText>
 
-      <ArticleText>
-        Additionally, within these counties, the Black median income was less than the median income of the county as a whole.
-      </ArticleText>
+        <ArticleText>
+          Additionally, within these counties, the Black median income was less
+          than the median income of the county as a whole.
+        </ArticleText>
+      </div>
     {/snippet}
 
     {#snippet scrolly()}
       <div class="chart">
         <Chart {options} highcharts={Highcharts} />
       </div>
-      
     {/snippet}
   </Scroller>
 </div>
 
 <style>
   .chart {
-    width: 100%;
+    width: 90%;
     margin: 0px auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   div {
-    background-color: #E6E6E6;
+    background-color: #e6e6e6;
   }
 </style>

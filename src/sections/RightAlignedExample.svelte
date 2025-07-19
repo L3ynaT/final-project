@@ -71,7 +71,7 @@
 </script>
 
 <div>
-  <Scroller layout="right">
+  <Scroller layout="left">
     {#snippet sticky()}
       <div class="chart">
         <Chart {options} highcharts={Highcharts} />
