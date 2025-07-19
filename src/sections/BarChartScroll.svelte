@@ -8,7 +8,7 @@
   let options = {
     chart: {
       type: "bar",
-      height: 2000,
+      height: 2100,
       backgroundColor: "#E6E6E6",
       style: {
         fontFamily: "DM Sans",

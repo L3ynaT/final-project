@@ -82,7 +82,7 @@
     {#snippet scrolly()}
       <ArticleText>
         12 of the 20 counties were considered a primary care health professional
-        shortage area in 2024.
+        shortage area (HPSA) in 2024. The higher the primary care HPSA score, the more severe the shortage.
       </ArticleText>
 
       <ArticleText>

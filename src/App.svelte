@@ -1,6 +1,6 @@
 <script>
   import LeftAlignedExample from "./sections/LeftAlignedExample.svelte";
-  import RightAlignedExample from "./sections/RightAlignedExample.svelte";
+  import HPSA from "./sections/HPSA.svelte";
   import ImageExample from "./sections/ImageExample.svelte";
   import TitleSection from "./sections/TitleSection.svelte";
   import InteresectionObserverBasicExample from "./sections/InteresectionObserverBasicExample.svelte";
@@ -12,6 +12,7 @@
   import StandAlone from "./sections/StandAlone.svelte";
   import CountyTitleSection from "./sections/CountyTitleSection.svelte";
   import BarChartScroll from "./sections/BarChartScroll.svelte";
+  import HealthInsurance from "./sections/HealthInsurance.svelte";
 </script>
 
 <main>
@@ -19,8 +20,8 @@
   <StandAlone />
   <CountyTitleSection />
   <BarChartScroll />
-
-  <RightAlignedExample />
+  <HPSA />
+  <HealthInsurance />
   <LeftAlignedExample />
   <ImageExample />
 
