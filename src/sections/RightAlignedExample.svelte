@@ -2,15 +2,23 @@
   import * as Highcharts from "highcharts";
   import "highcharts/modules/exporting";
   import { Chart } from "@highcharts/svelte";
-  import Scroller from "../lib/Scroller.svelte";
+  import ScrollerBlueVer from "../lib/ScrollerBlueVer.svelte";
   import ArticleText from "../lib/ArticleText.svelte";
 
   let options = {
     chart: {
       type: "pie",
+      backgroundColor: "#94CBEC",
+      height: 600,
+      style: {
+        fontFamily: "DM Sans",
+      },
     },
     title: {
-      text: "New Title!",
+      text: "",
+      style: {
+        fontFamily: "DM Serif Display",
+      },
     },
     plotOptions: {
       pie: {
@@ -22,10 +30,10 @@
           },
           {
             enabled: true,
-            distance: -40,
+            distance: -50,
             format: "{point.percentage:.1f}%",
             style: {
-              fontSize: "1.2em",
+              fontSize: "1.4em",
               textOutline: "none",
             },
             filter: {
@@ -39,30 +47,23 @@
     },
     series: [
       {
-        name: "Group",
+        name: "Number of Counties",
         data: [
           {
-            name: "Group 1",
-            y: 151,
-          },
-          {
-            name: "Group 2",
-            sliced: true,
+            name: "Severe Shortage",
             selected: true,
-            y: 180,
+            y: 11,
+            color: "#0072B2",
           },
           {
-            name: "Group 3",
-            y: 32,
+            name: "Moderate Shortage",
+            y: 1,
+            color: "#5DA899",
           },
           {
-            name: "Group 4",
-            y: 77,
-          },
-          {
-            name: "Group 6",
-            y: 65,
-            sliced: true,
+            name: "No Shortage",
+            y: 8,
+            color: "#E6E6E6",
           },
         ],
       },
@@ -71,69 +72,37 @@
 </script>
 
 <div>
-  <Scroller layout="left">
+  <ScrollerBlueVer layout="left">
     {#snippet sticky()}
       <div class="chart">
         <Chart {options} highcharts={Highcharts} />
       </div>
-      <p>
-        Here's an example chart using
-        <a href="https://www.highcharts.com/">Highcharts</a>!
-      </p>
-      <p>
-        📈 <strong>Highcharts</strong> is a super-flexible library for creating
-        all kinds of charts. See demos of different chart types
-        <a href="https://www.highcharts.com/demo">here</a>.
-      </p>
-      <p>
-        Since we're using Highcharts through Svelte, the syntax is a little
-        different from what you might see in the demos. But all of Highcharts'
-        functionality is available through the Highcharts for Svelte package.
-      </p>
-      <p>
-        The configuration is done through the
-        <code>options</code> json object passed to the chart, which you'll see in
-        the source code for this template.
-      </p>
-      <p>
-        Use the
-        <a href="https://api.highcharts.com/highcharts/">API reference</a>
-        to understand what each element in the <code>options</code> object does.
-      </p>
     {/snippet}
 
     {#snippet scrolly()}
       <ArticleText>
-        <strong>Welcome to the KWK Data Scrollytelling Template!</strong>
+        12 of the 20 counties were considered a primary care health professional
+        shortage area in 2024.
       </ArticleText>
 
       <ArticleText>
-        This is a <strong>basic example</strong> of how you might create a scrollytelling
-        piece using Svelte and Highcharts.
+        1 of those 12 counties had a moderate shortage (primary care HPSA score:
+        1-15)
       </ArticleText>
 
       <ArticleText>
-        You can use this template as a <strong>starting point</strong>
-        for your project.
-        <br /><br />
-        Or, if you want to build something from scratch, you can use it as a
-        <strong>reference</strong> for specific functionality.
-      </ArticleText>
-
-      <ArticleText>
-        This is <strong>just one way</strong> that scrollytelling can look.
-        <br /><br />
-        <strong>
-          If you use this template, be sure to modify it and make it your own!
-        </strong>
+        The remaining 11 counties had a severe shortage (primary care HPSA
+        score: 16-25)
       </ArticleText>
     {/snippet}
-  </Scroller>
+  </ScrollerBlueVer>
 </div>
 
 <style>
   .chart {
-    width: 90%;
+    width: 100%;
     margin: 0px auto;
   }
+
+  
 </style>

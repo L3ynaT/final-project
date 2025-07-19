@@ -3,7 +3,7 @@
   import "highcharts/modules/exporting";
   import { Chart } from "@highcharts/svelte";
   import Scroller from "../lib/Scroller.svelte";
-  import ArticleText from "../lib/ArticleText.svelte";
+  import ArticleTextCloser from "../lib/ArticleTextCloser.svelte";
 
   let options = {
     chart: {
@@ -12,10 +12,15 @@
       backgroundColor: "#E6E6E6",
       style: {
         fontFamily: "DM Sans",
+        fontSize: "1em",
       },
     },
     title: {
       text: "Median Income by County",
+      style: {
+        fontFamily: "DM Serif Display",
+        fontSize: "1.8em",
+      },
     },
     subtitle: {
       text:
@@ -114,14 +119,14 @@
   <Scroller layout="left">
     {#snippet sticky()}
       <div>
-        <ArticleText>
+        <ArticleTextCloser>
           All 20 counties fell into the lower quartile of county median incomes.
-        </ArticleText>
+        </ArticleTextCloser>
 
-        <ArticleText>
+        <ArticleTextCloser>
           Additionally, within these counties, the Black median income was less
           than the median income of the county as a whole.
-        </ArticleText>
+        </ArticleTextCloser>
       </div>
     {/snippet}
 
