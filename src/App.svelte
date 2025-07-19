@@ -11,12 +11,14 @@
   import TestSection from "./sections/TestSection.svelte";
   import StandAlone from "./sections/StandAlone.svelte";
   import CountyTitleSection from "./sections/CountyTitleSection.svelte";
+  import BarChartScroll from "./sections/BarChartScroll.svelte";
 </script>
 
 <main>
   <TitleSection />
   <StandAlone />
   <CountyTitleSection />
+  <BarChartScroll />
 
   <RightAlignedExample />
   <LeftAlignedExample />

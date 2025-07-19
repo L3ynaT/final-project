@@ -16,7 +16,7 @@
     <article>
       <ArticleText>
         The impact of a lower income does not end at financial struggles. Having
-        a lower income has also been associated with greater health risks.
+        a lower income may possibly be linked to greater health risks.
       </ArticleText>
     </article>
     <Footnote>

@@ -16,7 +16,7 @@
 
 <style>
     .wrapper {
-        background-color: #f7f5eb;
+        background-color: #E6E6E6;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
