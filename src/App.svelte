@@ -13,6 +13,7 @@
   import CountyTitleSection from "./sections/CountyTitleSection.svelte";
   import BarChartScroll from "./sections/BarChartScroll.svelte";
   import HealthInsurance from "./sections/HealthInsurance.svelte";
+  import Conclusion from "./sections/Conclusion.svelte";
 </script>
 
 <main>
@@ -22,6 +23,7 @@
   <BarChartScroll />
   <HPSA />
   <HealthInsurance />
+  <Conclusion />
   <LeftAlignedExample />
   <ImageExample />
 
