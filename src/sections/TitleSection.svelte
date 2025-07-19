@@ -1,9 +1,6 @@
 <script>
-  import * as Highcharts from "highcharts";
   import "highcharts/modules/exporting";
-  import { Chart } from "@highcharts/svelte";
-  import Scroller from "../lib/Scroller.svelte";
-  import ArticleText from "../lib/ArticleText.svelte";
+  import ArticleTextCloser from "../lib/ArticleTextCloser.svelte";
   import TitleCard from "../lib/TitleCard.svelte";
   import ScrollerStack from "../lib/ScrollerStack.svelte";
   import FullPage from "../lib/FullPage.svelte";
@@ -24,10 +21,10 @@
     {#snippet scrolly()}
       <Gradient direction="up"></Gradient>
       <FullPage>
-        <ArticleText>In 2022, the median annual earnings for Black full-time workers (25-34
+        <ArticleTextCloser>In 2022, the median annual earnings for Black full-time workers (25-34
         years old of all education levels) was $46,040, one of the lowest
-        earnings compared to other racial/ethnic groups.</ArticleText>
-        <ArticleText>[a graph will go here]</ArticleText>
+        earnings compared to other racial/ethnic groups.</ArticleTextCloser>
+        <ArticleTextCloser>[a graph will go here]</ArticleTextCloser>
       </FullPage>
     
     {/snippet}

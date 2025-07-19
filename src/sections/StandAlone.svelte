@@ -1,23 +1,16 @@
 <script>
-  import * as Highcharts from "highcharts";
   import "highcharts/modules/exporting";
-  import { Chart } from "@highcharts/svelte";
-  import ArticleText from "../lib/ArticleText.svelte";
+  import ArticleTextCloser from "../lib/ArticleTextCloser.svelte";
   import Footnote from "../lib/Footnote.svelte";
-
-  const title = "The wealth gap is widely known, ";
-  const title2 = "but what health implications could it come with?";
-  const subtitle =
-    "A closer look at the health disparities in Black communities";
 </script>
 
 <div>
   <section>
     <article>
-      <ArticleText>
+      <ArticleTextCloser>
         The impact of a lower income does not end at financial struggles. Having
         a lower income may possibly be linked to greater health risks.
-      </ArticleText>
+      </ArticleTextCloser>
     </article>
     <Footnote>
       Liu, Lili et al. “Impacts of Poverty and Lifestyles on Mortality: A Cohort
