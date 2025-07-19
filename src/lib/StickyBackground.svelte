@@ -15,13 +15,13 @@
 </div>
 
 <style>
-    .scrolly {
-    position: relative;
-    }
-
-    .sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    }
+.scrolly {
+  position: relative;
+  left: 50%;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 </style>

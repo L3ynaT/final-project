@@ -4,6 +4,7 @@
   import ArticleText from "../lib/ArticleText.svelte";
   import TitleCard from "../lib/TitleCard.svelte";
   import ScrollerStack from "../lib/ScrollerStack.svelte";
+  import ScrollerImageBg from "../lib/ScrollerImageBg.svelte";
   import FullPage from "../lib/FullPage.svelte";
   import StickyBackground from "../lib/StickyBackground.svelte";
 
@@ -29,7 +30,10 @@
           coverage percentage.
         </ArticleText>
         <ArticleText
-          >The remaining 8 counties were in the second quartile. None of the
+          >The remaining 8 counties were in the second quartile.
+        </ArticleText>
+        <ArticleText
+          >None of the
           counties were in the third or fourth quartiles.
         </ArticleText>
       </div>
