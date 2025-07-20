@@ -88,8 +88,7 @@
       y: 80,
       floating: true,
       borderWidth: 1,
-      backgroundColor: "var(--highcharts-background-color, #ffffff)",
-      shadow: true,
+      backgroundColor: "var(--highcharts-background-color, #f0f0f0)",
     },
     credits: {
       enabled: false,
@@ -118,7 +117,7 @@
 <div>
   <Scroller layout="left">
     {#snippet sticky()}
-      <div>
+      <div class="text">
         <ArticleTextCloser>
           All 20 counties fell into the lower quartile of county median incomes.
         </ArticleTextCloser>
@@ -148,5 +147,10 @@
 
   div {
     background-color: #e6e6e6;
+  }
+
+  .text {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 </style>

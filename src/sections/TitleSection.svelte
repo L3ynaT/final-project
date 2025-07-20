@@ -14,9 +14,21 @@
     "A closer look at the health disparities in Black communities";
 
   let options = {
+    chart: {
+      height: 550,
+      backgroundColor: "#E6E6E6",
+      style: {
+        fontFamily: "DM Sans",
+      },
+    },
     title: {
       text: "Median Annual Earnings for Full-Time Workers (25-34 Years Old, All Education Levels, Nationwide) by Race/Ethnicity",
       align: "left",
+      style: {
+        fontFamily: "DM Serif Display",
+        fontSize: "1.8em",
+      },
+      
     },
 
     subtitle: {

@@ -22,6 +22,7 @@
     },
     plotOptions: {
       pie: {
+        borderColor: '#94CBEC',
         allowPointSelect: true,
         dataLabels: [
           {
@@ -80,29 +81,37 @@
     {/snippet}
 
     {#snippet scrolly()}
-      <ArticleText>
-        12 of the 20 counties were considered a primary care health professional
-        shortage area (HPSA) in 2024. The higher the primary care HPSA score, the more severe the shortage.
-      </ArticleText>
+      <div class="text">
+        <ArticleText>
+          12 of the 20 counties were considered a primary care health professional
+          shortage area (HPSA) in 2024. The higher the primary care HPSA score, the more severe the shortage.
+        </ArticleText>
 
-      <ArticleText>
-        1 of those 12 counties had a moderate shortage (primary care HPSA score:
-        1-15)
-      </ArticleText>
+        <ArticleText>
+          1 of those 12 counties had a moderate shortage (primary care HPSA score:
+          1-15)
+        </ArticleText>
 
-      <ArticleText>
-        The remaining 11 counties had a severe shortage (primary care HPSA
-        score: 16-25)
-      </ArticleText>
+        <ArticleText>
+          The remaining 11 counties had a severe shortage (primary care HPSA
+          score: 16-25)
+        </ArticleText>
+      </div>
     {/snippet}
   </ScrollerBlueVer>
+  
 </div>
 
 <style>
   .chart {
     width: 70%;
     margin: 0px auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
+  .text {
+    padding-bottom: 200px;
+  }
   
 </style>
