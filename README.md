@@ -22,3 +22,5 @@ Run `npm install` and then `npm run dev` to spin up the project locally. Then, s
 Repo created using vite (`npm create vite@6`)
 
 Included code from https://pudding.cool/process/scrollytelling-sticky/ for scrolling functionality
+
+I used ChatGPT to help me understand how to integrate Leaflet maps in Svelte by asking questions about it.

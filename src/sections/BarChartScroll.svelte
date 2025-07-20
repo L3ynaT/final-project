@@ -86,6 +86,7 @@
       verticalAlign: "top",
       x: -40,
       y: 80,
+      width: 155,
       floating: true,
       borderWidth: 1,
       backgroundColor: "var(--highcharts-background-color, #f0f0f0)",
@@ -101,6 +102,7 @@
           33188, 38814, 35741, 40265, 49966, 40117, 32131, 33182, 37981, 36723,
         ],
         color: "#0072B2",
+        
       },
       {
         name: "Black Median Income",

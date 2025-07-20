@@ -16,7 +16,7 @@
 
 <style>
   .wrapper {
-    background-color: #94cbec;
+    background-color: #e6e6e6;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -42,7 +42,6 @@
     width: 50%;
   }
   .sticky {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
   }

@@ -2,11 +2,28 @@
   import * as Highcharts from "highcharts";
   import "highcharts/modules/exporting";
   import { Chart } from "@highcharts/svelte";
+  import { onMount } from "svelte";
+  import L from "leaflet";
 
-  const title = "The wealth gap is widely known, ";
-  const title2 = "but what health implications could it come with?";
-  const subtitle =
-    "A closer look at the health disparities in Black communities";
+  let map;
+  let marker;
+
+  onMount(() => {
+    var map = L.map("map").setView([33, -82], 6);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+	    {
+	      attribution: `&copy;<a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>,
+	        &copy;<a href="https://carto.com/attributions" target="_blank">CARTO</a>`,
+	      subdomains: 'abcd',
+	      maxZoom: 14,
+	    }).addTo(map);
+
+    var marker = L.marker([33.275346, -82.976309]).addTo(map);
+    marker.bindPopup("<b>Hancock County, GA</b><br>I am a popup.").openPopup();
+
+    
+  });
 </script>
 
 <div>
@@ -16,7 +33,7 @@
       percentage
     </h1>
   </section>
-  <section class="map"></section>
+  <section id="map"></section>
 </div>
 
 <style>
@@ -25,7 +42,7 @@
   }
   section {
     display: flex;
-    height: 100vh;
+    height: 110vh;
     align-items: center;
     float: left;
     width: 50%;
@@ -38,7 +55,9 @@
     font-size: 3rem;
     padding: 70px;
   }
-  .map {
+  #map {
     background-color: #ffffff;
+    height: 110vh;
   }
+  @import "leaflet/dist/leaflet.css";
 </style>

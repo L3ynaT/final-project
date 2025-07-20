@@ -19,8 +19,7 @@
   position: relative;
 }
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
-  top: 50vh;
+  top: 0vh;
 }
 </style>
