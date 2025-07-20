@@ -51,6 +51,5 @@
   }
   .text {
     height: 100vh;
-    width: 50%;
   }
 </style>

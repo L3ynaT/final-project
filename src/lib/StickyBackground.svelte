@@ -18,6 +18,7 @@
 .scrolly {
   position: relative;
   left: 50%;
+  width: 50%;
 }
 .sticky {
   position: -webkit-sticky;
