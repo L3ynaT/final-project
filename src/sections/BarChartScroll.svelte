@@ -69,7 +69,7 @@
       gridLineWidth: 0,
     },
     tooltip: {
-      valueSuffix: " dollars",
+      valuePrefix: "$",
     },
     plotOptions: {
       bar: {

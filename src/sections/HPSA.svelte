@@ -100,7 +100,7 @@
 
 <style>
   .chart {
-    width: 100%;
+    width: 70%;
     margin: 0px auto;
   }
 

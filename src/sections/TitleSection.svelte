@@ -15,24 +15,27 @@
 
   let options = {
     title: {
-      text: "U.S Solar Employment Growth",
+      text: "Median Annual Earnings for Full-Time Workers (25-34 Years Old, All Education Levels, Nationwide) by Race/Ethnicity",
       align: "left",
     },
 
     subtitle: {
-      text: 'By Job Category. Source: <a href="https://irecusa.org/programs/solar-jobs-census/" target="_blank">IREC</a>.',
+      text: 'Source: <a href="https://blackwealthdata.org/explore/employment" target="_blank">Black Wealth Data Center</a>.',
       align: "left",
     },
 
     yAxis: {
       title: {
-        text: "Number of Employees",
+        text: "Median Annnual Earnings (dollars)",
       },
     },
 
     xAxis: {
+      title: {
+        text: "Year",
+      },
       accessibility: {
-        rangeDescription: "Range: 2010 to 2022",
+        rangeDescription: "Range: 2012 to 2022",
       },
     },
 
@@ -47,56 +50,46 @@
         label: {
           connectorAllowed: false,
         },
-        pointStart: 2010,
+        pointStart: 2012,
       },
+    },
+    tooltip: {
+      valuePrefix: "$",
     },
 
     series: [
       {
-        name: "Installation & Developers",
+        name: "Hispanic",
         data: [
-          43934, 48656, 65165, 81827, 112143, 142383, 171533, 165174, 155157,
-          161454, 154610, 168960, 171558,
+          39260, 38580, 38880, 39840, 41420, 42090, 42790, 43180, 46310, 45490,
+          45610,
         ],
+        color: "#ab6ad6",
       },
       {
-        name: "Manufacturing",
+        name: "White",
         data: [
-          24916, 37941, 29742, 29851, 32490, 30282, 38121, 36885, 33726, 34243,
-          31050, 33099, 33473,
+          53110, 53140, 52580, 56060, 55910, 56040, 57450, 58760, 59790, 59620,
+          58120,
         ],
+        color: "#0072B2",
       },
       {
-        name: "Sales & Distribution",
+        name: "Asian",
         data: [
-          11744, 30000, 16005, 19771, 20185, 24377, 32147, 30912, 29243, 29213,
-          25663, 28978, 30618,
+          67110, 64740, 62910, 64400, 67210, 73300, 71130, 70540, 81160, 78740,
+          81030,
         ],
+        color: "#5DA899"
       },
       {
-        name: "Operations & Maintenance",
+        
+        name: "Black",
         data: [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          11164,
-          11218,
-          10077,
-          12530,
-          16585,
+          40930, 42810, 39190, 43440, 41980, 42170, 42740, 43660, 46550, 45170,
+          46040,
         ],
-      },
-      {
-        name: "Other",
-        data: [
-          21908, 5548, 8105, 11248, 8989, 11816, 18274, 17300, 13053, 11906,
-          10073, 11471, 11648,
-        ],
+        color: "#4048b6",
       },
     ],
 
@@ -128,15 +121,32 @@
     {#snippet scrolly()}
       <Gradient direction="up"></Gradient>
       <FullPage>
-        <ArticleTextCloser
-          >In 2022, the median annual earnings for Black full-time workers
-          (25-34 years old of all education levels) was $46,040, one of the
-          lowest earnings compared to other racial/ethnic groups.</ArticleTextCloser
-        >
-        <div class="chart">
-          <Chart {options} highcharts={Highcharts} />
+        <div class="content">
+          <section class="text">
+          <ArticleTextCloser
+            >In 2022, the median annual earnings for Black full-time workers
+            (25-34 years old of all education levels) was $46,040, one of the
+            lowest earnings compared to other racial/ethnic groups.</ArticleTextCloser
+          ></section>
+          <div class="chart">
+            <Chart {options} highcharts={Highcharts} />
+          </div>
         </div>
       </FullPage>
     {/snippet}
   </ScrollerStack>
 </div>
+
+<style>
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  .text {
+    margin: 30px;
+  }
+  .chart {
+    margin-right: 120px;
+    width: 100%;
+  }
+</style>
