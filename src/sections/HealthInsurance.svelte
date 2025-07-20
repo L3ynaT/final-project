@@ -51,5 +51,6 @@
   }
   .text {
     height: 100vh;
+    background-color: aliceblue;
   }
 </style>

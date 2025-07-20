@@ -14,6 +14,7 @@
   import BarChartScroll from "./sections/BarChartScroll.svelte";
   import HealthInsurance from "./sections/HealthInsurance.svelte";
   import Conclusion from "./sections/Conclusion.svelte";
+  import Citations from "./sections/Citations.svelte";
 </script>
 
 <main>
@@ -24,6 +25,7 @@
   <HPSA />
   <HealthInsurance />
   <Conclusion />
+  <Citations />
   <LeftAlignedExample />
   <ImageExample />
 

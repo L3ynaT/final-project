@@ -21,6 +21,6 @@
 .sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 50vh;
 }
 </style>
