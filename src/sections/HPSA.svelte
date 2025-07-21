@@ -104,7 +104,7 @@
 
 <style>
   .chart {
-    width: 70%;
+    width: 100%;
     margin: 0px auto;
     padding-top: 200px;
     padding-bottom: 200px;

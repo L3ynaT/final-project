@@ -40,6 +40,7 @@
     position: relative;
     left: 50%;
     width: 50%;
+    top: -30vh;
   }
   .sticky {
     position: sticky;

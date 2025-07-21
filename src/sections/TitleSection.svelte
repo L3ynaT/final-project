@@ -15,7 +15,7 @@
 
   let options = {
     chart: {
-      height: 550,
+      height: 570,
       backgroundColor: "#E6E6E6",
       style: {
         fontFamily: "DM Sans",

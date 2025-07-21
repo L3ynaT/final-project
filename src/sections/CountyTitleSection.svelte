@@ -1,7 +1,5 @@
 <script>
-  import * as Highcharts from "highcharts";
   import "highcharts/modules/exporting";
-  import { Chart } from "@highcharts/svelte";
   import { onMount } from "svelte";
   import L from "leaflet";
 
@@ -16,7 +14,6 @@
       {
         attribution: `&copy;<a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>,
 	        &copy;<a href="https://carto.com/attributions" target="_blank">CARTO</a>`,
-        subdomains: "abcd",
         maxZoom: 14,
       }
     ).addTo(map);

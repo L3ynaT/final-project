@@ -2,54 +2,43 @@
   import "highcharts/modules/exporting";
   import ArticleTextCloser from "../lib/ArticleTextCloser.svelte";
   import ArticleText from "../lib/ArticleText.svelte";
-  import TitleCard from "../lib/TitleCard.svelte";
-  import ScrollerStack from "../lib/ScrollerStack.svelte";
-  import ScrollerImageBg from "../lib/ScrollerImageBg.svelte";
-  import FullPage from "../lib/FullPage.svelte";
-  import StickyBackground from "../lib/StickyBackground.svelte";
-
-  const title = "The wealth gap is widely known, ";
-  const title2 = "but what health implications could it come with?";
-  const subtitle =
-    "A closer look at the health disparities in Black communities";
+  import Scroller from "../lib/Scroller.svelte";
 </script>
 
 <div>
-  <StickyBackground layout="right">
+  <Scroller layout="right">
     {#snippet sticky()}
-      <img
-        src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="USA map"
-      />
+      <div class="picture">
+        <img
+          src="https://images.pexels.com/photos/7163955/pexels-photo-7163955.jpeg"
+          alt="USA map"
+        />
+      </div>
     {/snippet}
 
     {#snippet scrolly()}
       <div class="text">
         <ArticleText>
-          12 of the 20 counties were in the lower quartile of health insurance
-          coverage percentage.
+          In 2023, 12 of the 20 counties fell into the lower quartile of health
+          insurance coverage percentage. The remaining 8 counties were in the
+          second quartile.
         </ArticleText>
-        <ArticleText
-          >The remaining 8 counties were in the second quartile.
-        </ArticleText>
-        <ArticleText
-          >None of the
-          counties were in the third or fourth quartiles.
+        <ArticleText>
+          All 20 counties were in the bottom two quartiles, meaning they were
+          all below the median total population percentage with health
+          insurance.
         </ArticleText>
       </div>
     {/snippet}
-  </StickyBackground>
+  </Scroller>
 </div>
 
 <style>
   img {
-    display: flex;
-    justify-content: center;
-
-    height: 100vh;
-    object-fit: cover;
+    width: 100%;
+    height: 105vh;
+    object-fit: contain;
   }
   .text {
-  
   }
 </style>
