@@ -109,7 +109,7 @@
 
 <style>
   .text {
-    padding-bottom: 200px;
+    padding-bottom: 300px;
     background-image: linear-gradient(
       to right,
       rgba(255, 0, 0, 0),
