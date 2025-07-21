@@ -83,7 +83,7 @@
 <div>
   <section>
     <h1>
-      A dive into the 20 U.S. counties with the highest Black population
+      A dive into the <a href="https://blackwealthdata.org/explore/population">20 U.S. counties</a> with the highest Black population
       percentage
     </h1>
   </section>
@@ -108,6 +108,9 @@
     text-align: right;
     font-size: 3rem;
     padding: 70px;
+  }
+  a {
+    color: black;
   }
   #map {
     background-color: #ffffff;

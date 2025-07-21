@@ -4,6 +4,8 @@
   import { Chart } from "@highcharts/svelte";
   import Scroller from "../lib/Scroller.svelte";
   import ArticleTextCloser from "../lib/ArticleTextCloser.svelte";
+  import ObservedTextBlur from "../lib/ObservedTextBlur.svelte";
+  import ObservedArticleText from "../lib/ObservedArticleText.svelte";
 
   let options = {
     chart: {
@@ -26,6 +28,9 @@
         "Source: <a " +
         'href="https://blackwealthdata.org/explore/employment"' +
         'target="_blank">Black Wealth Data Center</a>',
+      style: {
+        textDecorationLine: "underline",
+      },
     },
     xAxis: {
       categories: [
@@ -101,7 +106,6 @@
           33188, 38814, 35741, 40265, 49966, 40117, 32131, 33182, 37981, 36723,
         ],
         color: "#0072B2",
-        
       },
       {
         name: "Black Median Income",
@@ -113,20 +117,35 @@
       },
     ],
   };
+
+  const option = {
+    threshold: [0.9, 1.0],
+  };
+
+  const unblurTextCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      const elem = entry.target;
+
+      if (entry.intersectionRatio >= 0.95) {
+      } else if (entry.intersectionRatio < 0.95) {
+      }
+    });
+  };
 </script>
 
 <div>
   <Scroller layout="left">
     {#snippet sticky()}
       <div class="text">
-        <ArticleTextCloser>
-          All 20 counties fell into the lower quartile of county median incomes in 2023.
-        </ArticleTextCloser>
+        <ObservedTextBlur callback={unblurTextCallback} {option}>
+          All 20 counties fell into the lower quartile of county median incomes
+          in 2023.
+        </ObservedTextBlur>
 
-        <ArticleTextCloser>
+        <ObservedTextBlur callback={unblurTextCallback} {option}>
           Additionally, within these counties, the Black median income was less
           than the median income of the county as a whole.
-        </ArticleTextCloser>
+        </ObservedTextBlur>
       </div>
     {/snippet}
 

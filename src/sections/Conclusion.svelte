@@ -10,8 +10,8 @@
 
 <div>
   <ArticleTextCloser>
-    While many factors may play a role in these findings, such as living
-    conditions and stress, this data suggests that having a low income can be a
+    While many <a href="https://www.forbes.com/sites/omerawan/2025/06/04/how-income-can-affect-your-health-and-population-health/">factors</a> may play a role in these findings, such as living
+    conditions and stress, this data suggests that having a <a href="https://www.ncbi.nlm.nih.gov/books/NBK578537/">low income</a> can be a
     factor in making access to healthcare more challenging.
   </ArticleTextCloser>
   <ArticleText
@@ -30,5 +30,8 @@
     background-color: #94cbec;
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+  a {
+    color: #0072B2;
   }
 </style>

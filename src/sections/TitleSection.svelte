@@ -34,6 +34,9 @@
     subtitle: {
       text: 'Source: <a href="https://blackwealthdata.org/explore/employment" target="_blank">Black Wealth Data Center</a>.',
       align: "left",
+      style: {
+        textDecorationLine: "underline",
+      },
     },
 
     yAxis: {

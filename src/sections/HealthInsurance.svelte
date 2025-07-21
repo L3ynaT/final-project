@@ -25,6 +25,9 @@
       text:
         'Source: <a target="_blank" ' +
         'href="https://blackwealthdata.org/explore/employment">Black Wealth Data Center</a>',
+      style: {
+        textDecorationLine: "underline",
+      },
     },
     xAxis: {
       categories: [

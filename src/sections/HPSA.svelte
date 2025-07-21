@@ -22,7 +22,7 @@
     },
     plotOptions: {
       pie: {
-        borderColor: '#94CBEC',
+        borderColor: "#94CBEC",
         allowPointSelect: true,
         dataLabels: [
           {
@@ -54,7 +54,7 @@
             name: "Severe Shortage",
             selected: true,
             y: 11,
-            color: "#0072B2",
+            color: "#E6E6E6",
           },
           {
             name: "Moderate Shortage",
@@ -64,7 +64,7 @@
           {
             name: "No Shortage",
             y: 8,
-            color: "#E6E6E6",
+            color: "#0072B2",
           },
         ],
       },
@@ -83,13 +83,16 @@
     {#snippet scrolly()}
       <div class="text">
         <ArticleText>
-          12 of the 20 counties were considered a primary care health professional
-          shortage area (HPSA) in 2024. The higher the primary care HPSA score, the more severe the shortage.
+          12 of the 20 counties were considered a primary care <a
+            href="https://blackwealthdata.org/explore/employment"
+            >health professional shortage area</a
+          > (HPSA) in 2024. The higher the primary care HPSA score, the more severe
+          the shortage.
         </ArticleText>
 
         <ArticleText>
-          1 of those 12 counties had a moderate shortage (primary care HPSA score:
-          1-15)
+          1 of those 12 counties had a moderate shortage (primary care HPSA
+          score: 1-15)
         </ArticleText>
 
         <ArticleText>
@@ -99,7 +102,6 @@
       </div>
     {/snippet}
   </ScrollerBlueVer>
-  
 </div>
 
 <style>
@@ -113,5 +115,8 @@
   .text {
     padding-bottom: 200px;
   }
-  
+
+  a {
+    color: #0072b2;
+  }
 </style>
