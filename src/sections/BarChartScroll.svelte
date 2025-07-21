@@ -30,7 +30,7 @@
     },
     xAxis: {
       categories: [
-        "Claibome County, MS",
+        "Claiborne County, MS",
         "Holmes County, MS",
         "Greene County, AL",
         "Jefferson County, MS",
