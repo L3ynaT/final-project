@@ -46,7 +46,7 @@
 
     .sticky {
         position: sticky;
-        top: 5vh;
+        top: 1vh;
         transform: translateY(0%);
         display: flex;
         align-items: center;

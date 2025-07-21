@@ -8,10 +8,10 @@
   import FullPage from "../lib/FullPage.svelte";
   import Gradient from "../lib/Gradient.svelte";
 
-  const title = "The wealth gap is widely known, ";
-  const title2 = "but what health implications could it come with?";
+  const title = "The Intersection of Income and Healthcare";
+  const title2 = " in Black Communities";
   const subtitle =
-    "A closer look at the health disparities in Black communities";
+    "The wealth gap is widely known, but what health implication could it come with?";
 
   let options = {
     chart: {

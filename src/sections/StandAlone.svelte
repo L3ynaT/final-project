@@ -2,15 +2,35 @@
   import "highcharts/modules/exporting";
   import ArticleTextCloser from "../lib/ArticleTextCloser.svelte";
   import Footnote from "../lib/Footnote.svelte";
+  import { fade, fly } from "svelte/transition";
+
+  let textIsVisible = $state(false);
+  const options = {
+    threshold: [0.9, 1.0],
+  };
+
+  const showTextCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      const elem = entry.target;
+
+      if (entry.intersectionRatio >= 0.95) {
+        textIsVisible = true;
+      } else if (entry.intersectionRatio < 0.95) {
+        elem.style.backgroundColor = "#888888";
+      }
+    });
+  };
 </script>
 
 <div>
   <section>
     <article>
-      <ArticleTextCloser>
-        The impact of a lower income does not end at financial struggles. Having
-        a lower income may possibly be linked to greater health risks.
-      </ArticleTextCloser>
+      {#if textIsVisible}
+        <ArticleTextCloser callback={showTextCallback} {options}>
+          The impact of a lower income does not end at financial struggles.
+          Having a lower income may possibly be linked to greater health risks.
+        </ArticleTextCloser>
+      {/if}
     </article>
     <Footnote>
       Liu, Lili et al. “Impacts of Poverty and Lifestyles on Mortality: A Cohort

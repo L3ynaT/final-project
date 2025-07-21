@@ -12,7 +12,6 @@
       backgroundColor: "#E6E6E6",
       style: {
         fontFamily: "DM Sans",
-        fontSize: "1em",
       },
     },
     title: {
@@ -121,7 +120,7 @@
     {#snippet sticky()}
       <div class="text">
         <ArticleTextCloser>
-          All 20 counties fell into the lower quartile of county median incomes.
+          All 20 counties fell into the lower quartile of county median incomes in 2023.
         </ArticleTextCloser>
 
         <ArticleTextCloser>
