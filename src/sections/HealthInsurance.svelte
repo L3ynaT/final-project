@@ -15,7 +15,7 @@
       },
     },
     title: {
-      text: "Health Insurance Coverage (2023)",
+      text: "Health Insurance Coverage",
       style: {
         fontFamily: "DM Serif Display",
         fontSize: "1.8em",
@@ -97,9 +97,10 @@
       <div class="text">
         <ArticleText>
           In 2023, 12 of the 20 counties fell into the lower quartile of health
-          insurance coverage percentage. The remaining 8 counties were in the
-          second quartile.
+          insurance coverage percentage.
         </ArticleText>
+        <ArticleText>The remaining 8 counties were in the
+          second quartile.</ArticleText>
         <ArticleText>
           All 20 counties were in the bottom two quartiles, meaning they were
           all below the median total population percentage with health

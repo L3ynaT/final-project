@@ -26,14 +26,4 @@
   <HPSA />
   <HealthInsurance />
   <Conclusion />
-  <Citations />
-  <LeftAlignedExample />
-  <ImageExample />
-
-  <IntersectionObserverSectionCard />
-  <InteresectionObserverBasicExample />
-  <IntersectionObserverAlertExample />
-  <DisappearingDuckExample />
-  <IntersectionObserverListExample />
-  <TestSection />
 </main>

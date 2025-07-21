@@ -2,6 +2,8 @@
   import "highcharts/modules/exporting";
   import { onMount } from "svelte";
   import L from "leaflet";
+  import { fly } from "svelte/transition";
+  import ObservedArticleText from "../lib/ObservedArticleText.svelte";
 
   let map;
   let marker;
@@ -78,14 +80,36 @@
     var marker = L.marker([32.143306, -85.715404]).addTo(map);
     marker.bindPopup("<b>Bullock County, AL</b><br>71.2%").openPopup();
   });
+
+  let textIsVisible = $state(false);
+  const options = {
+    threshold: [0.9, 1.0],
+  };
+
+  const showTextCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      const elem = entry.target;
+
+      if (entry.intersectionRatio >= 0.95) {
+        textIsVisible = true;
+      } else if (entry.intersectionRatio < 0.95) {
+      }
+    });
+  };
 </script>
 
 <div>
   <section>
-    <h1>
-      A dive into the <a href="https://blackwealthdata.org/explore/population">20 U.S. counties</a> with the highest Black population
-      percentage
-    </h1>
+    {#if textIsVisible}
+      <h1 in:fly={{ x: 200, delay: 100, duration: 1700 }}>
+        A dive into the <a href="https://blackwealthdata.org/explore/population"
+          >20 U.S. counties</a
+        > with the highest Black population percentage
+      </h1>
+    {/if}
+    <ObservedArticleText callback={showTextCallback} {options}
+      >.</ObservedArticleText
+    >
   </section>
   <section id="map"></section>
 </div>
@@ -107,7 +131,7 @@
     font-family: "DM Serif Display";
     text-align: right;
     font-size: 3rem;
-    padding: 70px;
+    padding: 50px;
   }
   a {
     color: black;

@@ -32,8 +32,7 @@
   .article-text {
     font-size: 0.1rem;
     font-family: "DM Sans";
-    width: 50%;
-    background-color: #e6e6e6;
-    color: #e6e6e6;
+    width: 10%;
+    color: transparent;
   }
 </style>
