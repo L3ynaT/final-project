@@ -11,7 +11,7 @@
   const title = "The Intersection of Income and Healthcare";
   const title2 = " in Black Communities";
   const subtitle =
-    "The wealth gap is widely known, but what health implication could it come with?";
+    "The wealth gap is widely known, but what health implications could it come with?";
 
   let options = {
     chart: {
@@ -125,6 +125,7 @@
       ],
     },
   };
+
 </script>
 
 <div>
