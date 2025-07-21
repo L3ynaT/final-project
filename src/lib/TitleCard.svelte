@@ -67,13 +67,37 @@
     font-size: 3rem;
     font-family: "DM Serif Display";
     margin: 0;
-    color: #000000;
+    color: transparent;
+    animation-name: fade-in;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fade-in {
+    from {
+      color: transparent;
+    }
+    to {
+      color: black;
+    }
   }
 
   p {
     font-size: 1.3rem;
     color: #005888;
     margin-top: 1rem;
+    animation-name: fade-in-blue;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fade-in-blue {
+    from {
+      color: transparent;
+    }
+    to {
+      color: 005888;
+    }
   }
 
   @media (max-width: 600px) {

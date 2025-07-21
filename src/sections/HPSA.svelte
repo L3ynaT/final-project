@@ -62,7 +62,7 @@
             color: "#5DA899",
           },
           {
-            name: "No Shortage",
+            name: "No Designated Shortage",
             y: 8,
             color: "#0072B2",
           },
@@ -106,7 +106,7 @@
 
 <style>
   .chart {
-    width: 100%;
+    width: 90%;
     margin: 0px auto;
     padding-top: 200px;
     padding-bottom: 200px;

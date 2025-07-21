@@ -9,11 +9,11 @@
 </script>
 
 <div>
-  <ArticleTextCloser>
+  <ArticleText>
     While many <a href="https://www.forbes.com/sites/omerawan/2025/06/04/how-income-can-affect-your-health-and-population-health/">factors</a> may play a role in these findings, such as living
     conditions and stress, this data suggests that having a <a href="https://www.ncbi.nlm.nih.gov/books/NBK578537/">low income</a> can be a
     factor in making access to healthcare more challenging.
-  </ArticleTextCloser>
+  </ArticleText>
   <ArticleText
     >Affording health insurance can be difficult, and, even with health
     insurance, there may be additional barriers to receiving healthcare due to
@@ -27,8 +27,8 @@
 
 <style>
   div {
-    background-color: #94cbec;
-    padding-top: 200px;
+    background-image: linear-gradient(rgba(148,203,236,1), rgba(148,203,236,0.3));
+    padding-top: 10px;
     padding-bottom: 200px;
   }
   a {

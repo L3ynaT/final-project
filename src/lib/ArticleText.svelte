@@ -18,5 +18,6 @@
     color: #000000;
     padding: 30px;
     margin-bottom: 200px;
+    box-shadow: 15px 15px 3px rgb(62, 122, 160, 0.4);
   }
 </style>
