@@ -2,10 +2,6 @@
   import "highcharts/modules/exporting";
   import ArticleTextCloser from "../lib/ArticleTextCloser.svelte";
   import ArticleText from "../lib/ArticleText.svelte";
-  import TitleCard from "../lib/TitleCard.svelte";
-  import ScrollerStack from "../lib/ScrollerStack.svelte";
-  import FullPage from "../lib/FullPage.svelte";
-  import Gradient from "../lib/Gradient.svelte";
 </script>
 
 <div>

@@ -17,6 +17,5 @@
     background-color: #E6E6E6;
     color: #000000;
     padding: 30px;
-    box-shadow: 15px 15px 3px rgb(62, 122, 160, 0.4);
   }
 </style>

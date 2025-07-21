@@ -5,7 +5,6 @@
   import Scroller from "../lib/Scroller.svelte";
   import ArticleTextCloser from "../lib/ArticleTextCloser.svelte";
   import ObservedTextBlur from "../lib/ObservedTextBlur.svelte";
-  import ObservedArticleText from "../lib/ObservedArticleText.svelte";
 
   let options = {
     chart: {
@@ -137,15 +136,15 @@
   <Scroller layout="left">
     {#snippet sticky()}
       <div class="text">
-        <ObservedTextBlur callback={unblurTextCallback} {option}>
+        <ArticleTextCloser>
           All 20 counties fell into the lower quartile of county median incomes
           in 2023.
-        </ObservedTextBlur>
+        </ArticleTextCloser>
 
-        <ObservedTextBlur callback={unblurTextCallback} {option}>
+        <ArticleTextCloser>
           Additionally, within these counties, the Black median income was less
           than the median income of the county as a whole.
-        </ObservedTextBlur>
+        </ArticleTextCloser>
       </div>
     {/snippet}
 

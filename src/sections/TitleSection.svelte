@@ -2,6 +2,7 @@
   import * as Highcharts from "highcharts";
   import "highcharts/modules/exporting";
   import { Chart } from "@highcharts/svelte";
+  import ArticleText from "../lib/ArticleText.svelte";
   import ArticleTextCloser from "../lib/ArticleTextCloser.svelte";
   import TitleCard from "../lib/TitleCard.svelte";
   import ScrollerStack from "../lib/ScrollerStack.svelte";
@@ -139,10 +140,10 @@
       <FullPage>
         <div class="content">
           <section class="text">
-          <ArticleTextCloser
+          <ArticleText
             >In 2022, the median annual earnings for Black full-time workers
             (25-34 years old of all education levels) was $46,040, one of the
-            lowest earnings compared to other racial/ethnic groups.</ArticleTextCloser
+            lowest earnings compared to other racial/ethnic groups.</ArticleText
           ></section>
           <div class="chart">
             <Chart {options} highcharts={Highcharts} />
@@ -160,6 +161,7 @@
   }
   .text {
     margin: 30px;
+    padding-bottom: 250px;
   }
   .chart {
     margin-right: 120px;
