@@ -1,14 +1,19 @@
 <script>
   import "highcharts/modules/exporting";
-  import ArticleTextCloser from "../lib/ArticleTextCloser.svelte";
   import ArticleText from "../lib/ArticleText.svelte";
 </script>
 
 <div>
+  <div class="top"></div>
   <ArticleText>
-    While many <a href="https://www.forbes.com/sites/omerawan/2025/06/04/how-income-can-affect-your-health-and-population-health/">factors</a> may play a role in these findings, such as living
-    conditions and stress, this data suggests that having a <a href="https://www.ncbi.nlm.nih.gov/books/NBK578537/">low income</a> can be a
-    factor in making access to healthcare more challenging.
+    While many <a
+      href="https://www.forbes.com/sites/omerawan/2025/06/04/how-income-can-affect-your-health-and-population-health/"
+      >factors</a
+    >
+    may play a role in these findings, such as living conditions and stress,
+    this data suggests that having a
+    <a href="https://www.ncbi.nlm.nih.gov/books/NBK578537/">low income</a> can be
+    a factor in making access to healthcare more challenging.
   </ArticleText>
   <ArticleText
     >Affording health insurance can be difficult, and, even with health
@@ -23,11 +28,23 @@
 
 <style>
   div {
-    background-image: linear-gradient(rgba(148,203,236,1), rgba(148,203,236,0.3));
-    padding-top: 10px;
+    background-image: linear-gradient(
+      rgba(148, 203, 236, 1),
+      rgba(148, 203, 236, 0.3)
+    );
+    padding-top: 1px;
     padding-bottom: 200px;
   }
   a {
-    color: #0072B2;
+    color: #0072b2;
+  }
+  .top {
+    background-image: linear-gradient(
+      rgba(148, 203, 236, 1),
+      rgba(148, 203, 236, 0)
+    );
+    position: sticky;
+    top: 0vh;
+    height: 30vh;
   }
 </style>

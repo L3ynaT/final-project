@@ -4,7 +4,6 @@
   import { Chart } from "@highcharts/svelte";
   import Scroller from "../lib/Scroller.svelte";
   import ArticleTextCloser from "../lib/ArticleTextCloser.svelte";
-  import ObservedTextBlur from "../lib/ObservedTextBlur.svelte";
 
   let options = {
     chart: {
@@ -117,19 +116,6 @@
     ],
   };
 
-  const option = {
-    threshold: [0.9, 1.0],
-  };
-
-  const unblurTextCallback = (entries, observer) => {
-    entries.forEach((entry) => {
-      const elem = entry.target;
-
-      if (entry.intersectionRatio >= 0.95) {
-      } else if (entry.intersectionRatio < 0.95) {
-      }
-    });
-  };
 </script>
 
 <div>

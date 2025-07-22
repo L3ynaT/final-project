@@ -101,7 +101,7 @@
 <div>
   <section>
     {#if textIsVisible}
-      <h1 in:fly={{ x: 200, delay: 100, duration: 1700 }}>
+      <h1 in:fly={{ x: 200, delay: 100, duration: 2000 }}>
         A dive into the <a href="https://blackwealthdata.org/explore/population"
           >20 U.S. counties</a
         > with the highest Black population percentage
@@ -118,6 +118,7 @@
   div {
     display: flex;
   }
+
   section {
     display: flex;
     height: 110vh;
@@ -126,6 +127,7 @@
     width: 50%;
     background-color: #94cbec;
   }
+
   h1 {
     margin: 0;
     font-family: "DM Serif Display";
@@ -133,12 +135,15 @@
     font-size: 3rem;
     padding: 50px;
   }
+
   a {
     color: black;
   }
+
   #map {
     background-color: #ffffff;
     height: 110vh;
   }
+  
   @import "leaflet/dist/leaflet.css";
 </style>

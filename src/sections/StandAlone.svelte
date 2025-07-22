@@ -1,6 +1,5 @@
 <script>
   import "highcharts/modules/exporting";
-  import ArticleTextCloser from "../lib/ArticleTextCloser.svelte";
   import ObservedArticleText from "../lib/ObservedArticleText.svelte";
   import Footnote from "../lib/Footnote.svelte";
   import { fade } from "svelte/transition";

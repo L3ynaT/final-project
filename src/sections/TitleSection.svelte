@@ -3,7 +3,6 @@
   import "highcharts/modules/exporting";
   import { Chart } from "@highcharts/svelte";
   import ArticleText from "../lib/ArticleText.svelte";
-  import ArticleTextCloser from "../lib/ArticleTextCloser.svelte";
   import TitleCard from "../lib/TitleCard.svelte";
   import ScrollerStack from "../lib/ScrollerStack.svelte";
   import FullPage from "../lib/FullPage.svelte";
