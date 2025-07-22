@@ -35,9 +35,11 @@
     padding-top: 1px;
     padding-bottom: 200px;
   }
+
   a {
     color: #0072b2;
   }
+  
   .fade-out {
     background-image: linear-gradient(
       rgba(148, 203, 236, 1),

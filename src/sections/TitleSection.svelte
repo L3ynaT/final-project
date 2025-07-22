@@ -28,7 +28,6 @@
         fontFamily: "DM Serif Display",
         fontSize: "1.8em",
       },
-      
     },
 
     subtitle: {
@@ -95,10 +94,9 @@
           67110, 64740, 62910, 64400, 67210, 73300, 71130, 70540, 81160, 78740,
           81030,
         ],
-        color: "#5DA899"
+        color: "#5DA899",
       },
       {
-        
         name: "Black",
         data: [
           40930, 42810, 39190, 43440, 41980, 42170, 42740, 43660, 46550, 45170,
@@ -125,7 +123,6 @@
       ],
     },
   };
-
 </script>
 
 <div>
@@ -139,11 +136,12 @@
       <FullPage>
         <div class="content">
           <section class="text">
-          <ArticleText
-            >In 2022, the median annual earnings for Black full-time workers
-            (25-34 years old of all education levels) was $46,040, one of the
-            lowest earnings compared to other racial/ethnic groups.</ArticleText
-          ></section>
+            <ArticleText
+              >In 2022, the median annual earnings for Black full-time workers
+              (25-34 years old of all education levels) was $46,040, one of the
+              lowest earnings compared to other racial/ethnic groups.</ArticleText
+            >
+          </section>
           <div class="chart">
             <Chart {options} highcharts={Highcharts} />
           </div>
@@ -158,10 +156,12 @@
     display: flex;
     align-items: center;
   }
+
   .text {
     margin: 30px;
     padding-bottom: 250px;
   }
+
   .chart {
     margin-right: 120px;
     width: 100%;

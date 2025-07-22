@@ -120,6 +120,7 @@
       rgba(148, 203, 236, 1)
     );
   }
+  
   .chart {
     width: 90%;
     padding-top: 17vh;

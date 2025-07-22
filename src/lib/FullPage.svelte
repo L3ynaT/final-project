@@ -20,5 +20,4 @@
     box-sizing: border-box;
     background-color: #94CBEC;
   }
-
 </style>
