@@ -128,7 +128,7 @@
         </ArticleTextCloser>
 
         <ArticleTextCloser>
-          Additionally, within these counties, the Black median income was less
+          Additionally, within each of these counties, the Black median income was less
           than the median income of the county as a whole.
         </ArticleTextCloser>
       </div>

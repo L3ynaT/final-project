@@ -45,6 +45,6 @@
     );
     position: sticky;
     top: 0vh;
-    height: 30vh;
+    height: 25vh;
   }
 </style>

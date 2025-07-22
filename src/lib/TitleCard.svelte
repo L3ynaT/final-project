@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import { fly } from "svelte/transition";
   let { title, title2, subtitle } = $props();
   let typingEffect = $state(false);
 
@@ -36,9 +37,9 @@
 <div class="title-card">
   <div class="layer"></div>
   <div class="content">
-    <h1>{title}</h1>
-    <h1>{title2}</h1>
     {#if typingEffect}
+      <h1 in:fly={{ x: 200, duration: 2000 }}>{title}</h1>
+      <h1 in:fly={{ x: 200, duration: 2000 }}>{title2}</h1>
       <p transition:typewriter>{subtitle}</p>
     {/if}
   </div>
@@ -67,19 +68,7 @@
     font-size: 3rem;
     font-family: "DM Serif Display";
     margin: 0;
-    color: transparent;
-    animation-name: fade-in;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes fade-in {
-    from {
-      color: transparent;
-    }
-    to {
-      color: black;
-    }
+    color: black;
   }
 
   p {
