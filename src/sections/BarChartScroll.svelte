@@ -155,7 +155,7 @@
   }
 
   .text {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 25vh;
+    padding-bottom: 20vh;
   }
 </style>

@@ -81,6 +81,7 @@
     {/snippet}
 
     {#snippet scrolly()}
+      <div class="fade-out"></div>
       <div class="text">
         <ArticleText>
           12 of the 20 counties were considered a primary care <a
@@ -118,5 +119,15 @@
 
   a {
     color: #0072b2;
+  }
+
+  .fade-out { /* create fade out effect */
+    background-image: linear-gradient(
+      rgba(148, 203, 236, 1),
+      rgba(148, 203, 236, 0)
+    );
+    position: sticky;
+    top: 0vh;
+    height: 40vh;
   }
 </style>

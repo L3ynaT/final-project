@@ -4,7 +4,7 @@
 </script>
 
 <div>
-  <div class="top"></div>
+  <div class="fade-out"></div>
   <ArticleText>
     While many <a
       href="https://www.forbes.com/sites/omerawan/2025/06/04/how-income-can-affect-your-health-and-population-health/"
@@ -38,7 +38,7 @@
   a {
     color: #0072b2;
   }
-  .top {
+  .fade-out {
     background-image: linear-gradient(
       rgba(148, 203, 236, 1),
       rgba(148, 203, 236, 0)

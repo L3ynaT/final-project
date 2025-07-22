@@ -8,13 +8,12 @@
   import DisappearingDuckExample from "./sections/DisappearingDuckExample.svelte";
   import IntersectionObserverSectionCard from "./sections/IntersectionObserverSectionCard.svelte";
   import IntersectionObserverListExample from "./sections/IntersectionObserverListExample.svelte";
-  import TestSection from "./sections/TestSection.svelte";
+
   import StandAlone from "./sections/StandAlone.svelte";
   import CountyTitleSection from "./sections/CountyTitleSection.svelte";
   import BarChartScroll from "./sections/BarChartScroll.svelte";
   import HealthInsurance from "./sections/HealthInsurance.svelte";
   import Conclusion from "./sections/Conclusion.svelte";
-  import Citations from "./sections/Citations.svelte";
   
 </script>
 
